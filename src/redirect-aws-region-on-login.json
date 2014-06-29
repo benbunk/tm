@@ -1,8 +1,45 @@
-//==UserScript==
-// @name Redirect AWS
-// @description Redirect AWS Region to US East
-// @version    1.0
-// @include https://console.aws.amazon.com/console/home*
-// @run-at document-start
-//==/UserScript==
-window.location.replace("https://console.aws.amazon.com/ec2/v2/home?region=us-east-1");
+{
+  "created_by":"Tampermonkey",
+  "version":"1",
+  "scripts":[
+    {
+      "name":"Redirect AWS",
+      "options":{
+        "awareOfChrome":false,
+        "comment":null,
+        "compat_arrayleft":false,
+        "compat_foreach":false,
+        "compat_forvarin":false,
+        "compat_metadata":false,
+        "compat_uW_gmonkey":false,
+        "compat_wrappedjsobject":false,
+        "compatopts_for_requires":true,
+        "noframes":null,
+        "override":{
+          "excludes":false,
+          "includes":false,
+          "matches":false,
+          "merge_excludes":true,
+          "merge_includes":true,
+          "merge_matches":true,
+          "orig_excludes":[],
+          "orig_includes":[
+            "https://console.aws.amazon.com/console/home*"
+          ],
+          "orig_matches":[],
+          "orig_noframes":null,
+          "orig_run_at":"document-start",
+          "use_excludes":[],
+          "use_includes":[],
+          "use_matches":[]
+          
+        },
+        "run_at":null,
+        "user_agent":""
+      },
+      "enabled":true,
+      "position":1,
+      "source":"Ly89PVVzZXJTY3JpcHQ9PQovLyBAbmFtZSBSZWRpcmVjdCBBV1MKLy8gQGRlc2NyaXB0aW9uIFJlZGlyZWN0IEFXUyBSZWdpb24gdG8gVVMgRWFzdAovLyBAdmVyc2lvbiAgICAxLjAKLy8gQGluY2x1ZGUgaHR0cHM6Ly9jb25zb2xlLmF3cy5hbWF6b24uY29tL2NvbnNvbGUvaG9tZSoKLy8gQHJ1bi1hdCBkb2N1bWVudC1zdGFydAovLz09L1VzZXJTY3JpcHQ9PQp3aW5kb3cubG9jYXRpb24ucmVwbGFjZSgiaHR0cHM6Ly9jb25zb2xlLmF3cy5hbWF6b24uY29tL2VjMi92Mi9ob21lP3JlZ2lvbj11cy1lYXN0LTEiKTs="
+    }
+  ]
+}
