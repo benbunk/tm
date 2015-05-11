@@ -3,6 +3,12 @@ Tamper Monkey Scripts
 
 Collection of tamper monkey scripts to make life a little easier.
 
+Scripts
+===
+1. redirect-aws-region.js - This script automatically redirects to US-EAST when logging into AWS. This is compatible with switching to US-WEST on demand.
+2. redirect-aws-login-on-logout.js - Automatically redirect AWS login pages to ADFS when your session expires.
+3. adfs-prepend-domain.js - Prepend the domain name to the ADFS username field to save some typing. Feel free to prepend your whole name by modifying the script.
+
 INSTALL
 ==
 
